@@ -1,0 +1,19 @@
+/* Outside the assistant layout; opens only on request. */
+#floatingReadingBuddy{position:fixed;z-index:80;width:min(290px,calc(100vw - 16px));max-height:calc(100dvh - 16px);overflow:auto;margin:0;border:1px solid #dce5ce;border-radius:16px;background:linear-gradient(125deg,#fffaf0,#f3f7eb);box-shadow:0 12px 35px #354d3029;box-sizing:border-box;isolation:isolate}
+#floatingReadingBuddy[hidden]{display:none!important}
+#floatingReadingBuddy .readingBuddyHeader{padding:12px 13px 8px;gap:8px}
+#floatingReadingBuddy .readingBuddyHeader>div{cursor:grab;touch-action:none;user-select:none;flex:1;min-width:0;gap:7px}
+#floatingReadingBuddy .readingBuddyHeader>div:focus-visible{outline:2px solid #759667;outline-offset:3px;border-radius:5px}
+#floatingReadingBuddy.buddyDragging .readingBuddyHeader>div{cursor:grabbing}
+#floatingReadingBuddy .readingBuddyHeader strong{font-size:13px;color:#66764e}
+#floatingReadingBuddy .readingBuddyHeader small{display:block;flex-basis:100%;font-size:10px;letter-spacing:0;color:#8b947e;line-height:1.5}
+#floatingReadingBuddy #buddyMinimize{width:30px;height:30px;flex-shrink:0;border:1px solid #e1e7d6;border-radius:8px;color:#6c7958;font-size:20px;padding:0}
+#floatingReadingBuddy .readingBuddyMain{max-height:none;padding:8px 12px;align-items:center}
+#floatingReadingBuddy .readerPuppy{width:76px!important;height:82px!important;min-width:76px!important}
+#floatingReadingBuddy .readingBuddyTalk p{font-size:12px;line-height:1.7;min-height:0;color:#7e856a}
+#floatingReadingBuddy .buddyTimer>span{font-size:20px;letter-spacing:1px}
+#floatingReadingBuddy .buddyTimer select{max-width:82px;font-size:11px}
+#floatingReadingBuddy .buddyFocusRow{padding:8px 12px 13px;gap:6px}
+#floatingReadingBuddy .buddyFocusRow button{font-size:12px;padding:6px 8px}
+#floatingReadingBuddy .buddyTimerHint,#floatingReadingBuddy .buddyQuoteMark{display:none}
+@media(max-width:480px){#floatingReadingBuddy{width:min(270px,calc(100vw - 16px))}}

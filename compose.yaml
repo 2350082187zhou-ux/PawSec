@@ -1,0 +1,44 @@
+services:
+  pawsec:
+    build: .
+    restart: unless-stopped
+    environment:
+      PAWSEC_MODE: public
+      PAWSEC_PUBLIC_ORIGIN: https://${PAWSEC_DOMAIN:?Set PAWSEC_DOMAIN in .env}
+      PAWSEC_ADMIN_USER: ${PAWSEC_ADMIN_USER:-admin}
+      PAWSEC_PASSWORD_HASH_FILE: /run/secrets/admin_password_hash
+      PAWSEC_SOURCE_URL: ${PAWSEC_SOURCE_URL:?Set your public source repository URL}
+      TZ: ${TZ:-Asia/Shanghai}
+    volumes:
+      - pawsec_data:/data
+    secrets:
+      - admin_password_hash
+    expose:
+      - "8765"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    stop_grace_period: 210s
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      PAWSEC_DOMAIN: ${PAWSEC_DOMAIN:?Set PAWSEC_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - pawsec
+secrets:
+  admin_password_hash:
+    file: ./secrets/admin-password.hash
+volumes:
+  pawsec_data:
+  caddy_data:
+  caddy_config:

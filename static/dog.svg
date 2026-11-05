@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="奶油色垂耳小狗，戴绿色领巾，抱着一本书">
+<defs>
+ <linearGradient id="fur" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#efd7ac"/></linearGradient>
+ <linearGradient id="ear" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bf8351"/><stop offset="1" stop-color="#895538"/></linearGradient>
+ <linearGradient id="body" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff1d3"/><stop offset="1" stop-color="#dfb984"/></linearGradient>
+ <linearGradient id="book" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#477f6d"/><stop offset="1" stop-color="#2e6052"/></linearGradient>
+</defs>
+<ellipse cx="202" cy="361" rx="118" ry="14" fill="#314d3d" opacity=".09"/>
+<g class="puppy-body">
+ <path class="puppy-tail" d="M270 292 C331 300 342 250 317 234 C301 224 290 240 302 251 C316 266 288 272 269 264" fill="#d8af77" stroke="#9b6d48" stroke-width="3" stroke-linejoin="round"/>
+ <path d="M145 227 C123 249 121 309 137 337 Q200 365 267 336 C279 299 270 244 251 227Z" fill="url(#body)" stroke="#bb9365" stroke-width="3"/>
+ <ellipse cx="201" cy="285" rx="52" ry="58" fill="#fff5df"/>
+ <path d="M144 323 C121 311 104 329 109 346 C114 365 158 365 168 348 L165 332" fill="url(#fur)" stroke="#bb9365" stroke-width="3"/>
+ <path d="M253 323 C277 311 296 329 289 348 C283 365 241 365 232 348 L235 332" fill="url(#fur)" stroke="#bb9365" stroke-width="3"/>
+ <g stroke="#c3a17a" stroke-width="2.5" stroke-linecap="round"><path d="M127 343v9m12-8v10m121-11v9m12-8v10"/></g>
+ <path d="M143 226 Q200 252 256 225 L251 248 Q202 271 148 247Z" fill="#679584" stroke="#416e5b" stroke-width="3"/>
+ <path d="M215 251L236 285L257 249" fill="#7fa491" stroke="#416e5b" stroke-width="3" stroke-linejoin="round"/>
+ <circle cx="201" cy="257" r="11" fill="#edc76e" stroke="#b28b3d" stroke-width="2"/><path d="M197 257l3 3 5-6" fill="none" stroke="#84642e" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g class="puppy-head">
+ <path class="puppy-ear left" d="M134 103 C104 86 78 116 76 156 C74 197 86 235 108 237 C133 240 142 207 147 169Z" fill="url(#ear)" stroke="#845336" stroke-width="3.5"/>
+ <path class="puppy-ear right" d="M268 103 C298 86 324 116 326 156 C328 197 316 235 294 237 C269 240 260 207 255 169Z" fill="url(#ear)" stroke="#845336" stroke-width="3.5"/>
+ <path d="M105 135 Q92 176 105 214M297 135 Q310 176 297 214" stroke="#e2b57d" stroke-width="5" fill="none" stroke-linecap="round" opacity=".55"/>
+ <path d="M111 155 C111 105 138 77 177 73 Q171 58 181 53 Q193 50 202 69 Q217 52 227 61 L221 75 C267 80 291 113 291 157 C296 202 264 242 202 244 C140 246 105 208 111 155Z" fill="url(#fur)" stroke="#b68e60" stroke-width="3.5" stroke-linejoin="round"/>
+ <path d="M135 113 Q153 88 178 88" fill="none" stroke="#fffdf5" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+ <path d="M259 117 C279 126 287 148 279 166 C266 176 249 169 245 153 C240 140 246 121 259 117Z" fill="#d3a066" opacity=".58"/>
+ <g class="puppy-eyes">
+  <ellipse cx="160" cy="158" rx="12" ry="16" fill="#3e2b25"/><ellipse cx="242" cy="158" rx="12" ry="16" fill="#3e2b25"/>
+  <ellipse cx="156" cy="152" rx="4" ry="5" fill="#fffdf5"/><ellipse cx="238" cy="152" rx="4" ry="5" fill="#fffdf5"/>
+  <circle cx="164" cy="165" r="2" fill="#b48a65"/><circle cx="246" cy="165" r="2" fill="#b48a65"/>
+ </g>
+ <g fill="none" stroke="#9b6d48" stroke-width="4" stroke-linecap="round"><path d="M148 132Q158 126 169 131"/><path d="M232 131Q243 126 253 132"/></g>
+ <ellipse cx="140" cy="185" rx="14" ry="7" fill="#e5a48f" opacity=".48"/><ellipse cx="264" cy="185" rx="14" ry="7" fill="#e5a48f" opacity=".48"/>
+ <path d="M156 193 C154 174 177 167 201 180 C226 165 250 175 248 194 C246 216 221 225 202 214 C182 225 157 215 156 193Z" fill="#fffaf0" stroke="#ead7b9" stroke-width="2"/>
+ <path d="M186 181 Q202 173 218 181 Q221 187 211 194 Q201 202 192 194 Q182 187 186 181Z" fill="#3e2b25"/><ellipse cx="196" cy="182" rx="6" ry="2.5" fill="#8c7460"/>
+ <path d="M201 195v8m0 0q-12 13-23 1m23-1q12 13 23 1" fill="none" stroke="#60432f" stroke-width="3" stroke-linecap="round"/>
+ <path d="M194 211 Q201 218 209 211 L208 222 Q201 234 195 222Z" fill="#df9e94"/>
+ <g fill="#c0a182"><circle cx="174" cy="191" r="1.5"/><circle cx="179" cy="197" r="1.5"/><circle cx="228" cy="191" r="1.5"/><circle cx="223" cy="197" r="1.5"/></g>
+</g>
+<g class="puppy-book">
+ <path d="M144 283L199 294L257 280L252 332L199 346L148 334Z" fill="url(#book)" stroke="#345c4d" stroke-width="3" stroke-linejoin="round"/>
+ <path d="M149 280Q177 276 200 289Q223 276 252 277L249 321Q225 320 200 335Q175 321 151 324Z" fill="#fff8e5" stroke="#c7c3a3" stroke-width="2"/>
+ <path d="M200 289v46" stroke="#c7c3a3" stroke-width="2"/><g stroke="#c6cbb1" stroke-width="2" stroke-linecap="round"><path d="M161 291l26 6m-25 4 24 6m-23 4 23 6m27-20 27-8m-27 18 26-7m-26 17 25-7"/></g>
+</g>
+<g fill="url(#fur)" stroke="#bb9365" stroke-width="3"><path class="puppy-paw left" d="M141 268C123 260 119 277 124 294Q130 311 147 305C160 299 156 281 141 268Z"/><path class="puppy-paw right" d="M261 268C279 260 283 277 278 294Q272 311 255 305C242 299 246 281 261 268Z"/></g>
+<g stroke="#c3a17a" stroke-width="2" stroke-linecap="round"><path d="M131 288l3 8m5-11 4 9m127-8-3 8m-5-11-4 9"/></g>
+</svg>

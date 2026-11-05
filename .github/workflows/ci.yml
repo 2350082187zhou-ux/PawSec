@@ -1,0 +1,29 @@
+name: Validate
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: pip install -r requirements.txt
+      - run: npm ci --omit=dev --ignore-scripts
+      - run: python tools/check_release.py
+      - run: python tools/run_tests.py
+      - name: Validate Compose
+        run: |
+          cp .env.example .env
+          mkdir -p secrets
+          printf '%s\n' 'CI-placeholder-not-a-password' > secrets/admin-password.hash
+          docker compose config --quiet
+      - run: docker build -t pawsec:ci .

@@ -1,0 +1,14 @@
+/* Library controls share the existing PawSec palette. */
+.libraryToolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:12px 0 0}
+.libraryFilters{display:flex;gap:8px;flex-wrap:wrap}.libraryFilters button{font-size:13px;padding:8px 12px;background:transparent;border-color:#dce5d6;color:#5d705c}
+.libraryFilters button[aria-pressed=true]{background:#287b66;border-color:#287b66;color:white}
+#librarySort{font-size:13px;max-width:100%;min-width:138px}.librarySummary{font-size:13px;color:#657268;margin:12px 0}
+.libraryResume{display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #cfddc7;border-left:4px solid #287b66;border-radius:12px;background:#edf3e8;padding:18px 22px;margin:0 0 26px}
+.libraryResume>div{min-width:0}.libraryResumeLabel{font-size:12px;font-weight:600;color:#287b66}.libraryResume h3{font-size:17px;margin:4px 0;line-height:1.6;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.libraryResume p{font-size:13px;color:#657268;margin:4px 0 0}.libraryResume>button{flex-shrink:0}
+#cards .card{display:flex;flex-direction:column;min-height:244px;padding:20px;transition:box-shadow .15s,border-color .15s,transform .15s}
+#cards .card:hover{transform:translateY(-2px)}#cards .cardTop,#cards .cardFoot{width:100%}#cards .cardFoot{gap:8px;flex-wrap:wrap}#cards .cardFoot small{color:#68765f}#cards .card h3{margin-bottom:14px}#cards .cardTop small{color:#6e7b66}
+.libraryProgress{margin-top:auto;width:100%;padding:0 0 14px;font-size:12px;color:#62735b;min-height:26px}.libraryProgressTrack{height:4px;background:#e6eddf;border-radius:4px;margin-top:7px;overflow:hidden}.libraryProgressTrack span{display:block;height:100%;background:#7fa982;border-radius:4px}
+.libraryEmpty{background:#f8faf5;padding:36px 20px}.libraryEmptyIcon{display:block;font-size:30px;color:#719365}.libraryEmpty h3{font-size:18px;color:#344d38;margin:8px 0}.libraryEmpty p{margin:8px 0 20px}.libraryEmpty button{font-size:14px}
+#library button:focus-visible,#library select:focus-visible{outline:3px solid #287b66;outline-offset:3px}
+@media(max-width:600px){.libraryResume{align-items:stretch;flex-direction:column;gap:12px;padding:16px}.libraryResume>button{width:100%}.libraryToolbar{align-items:stretch;gap:10px}.libraryFilters{gap:6px}.libraryFilters button{padding:8px 10px}.libraryToolbar select{width:100%}#cards{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){#cards .card{transition:none}#cards .card:hover{transform:none}}

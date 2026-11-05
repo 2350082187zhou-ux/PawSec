@@ -1,0 +1,2 @@
+.vectorPuppy{position:relative}.readerPuppy.vector-ready>img{visibility:hidden}.heroArt:has(.vector-ready)>img{visibility:hidden}.heroArt .puppyCanvas.vectorPuppy{overflow:visible;background:none}.heroArt .puppyCanvas.vectorPuppy>svg{filter:drop-shadow(0 7px 8px #896a3e0a)}
+#library .heroArt{grid-template-rows:260px auto!important}#library .heroArt .puppyCanvas{height:260px!important}#library .heroArt .artCaption{grid-area:2/1!important}#library .heroArt .petButton{display:none!important}.buddyInteractionRow{display:none!important}

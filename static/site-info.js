@@ -1,0 +1,1 @@
+fetch('/api/site').then(r=>r.json()).then(s=>{if(!s.source_url)return;const a=document.createElement('a');a.textContent='Source · AGPL-3.0';a.href=s.source_url;a.target='_blank';a.rel='noopener noreferrer';a.style.cssText='display:block;margin-top:10px;font-size:12px';document.querySelector('.sidebar footer').append(a)}).catch(()=>{});

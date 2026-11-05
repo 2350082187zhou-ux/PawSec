@@ -1,0 +1,692 @@
+[
+  {
+    "venue": "Australasia Conference on Information Security and Privacy",
+    "aliases": [
+      "ACISP",
+      "Australasia Conference on Information Security and Privacy"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/acisp.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Applied Cryptography and Network Security",
+    "aliases": [
+      "ACNS",
+      "Applied Cryptography and Network Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/acns.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Annual Computer Security Applications Conference",
+    "aliases": [
+      "ACSAC",
+      "Annual Computer Security Applications Conference"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/acsac.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Asia Conference on Computer and Communications Security",
+    "aliases": [
+      "AsiaCCS",
+      "Asia Conference on Computer and Communications Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/asiaccs.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on the Theory and Application of Cryptology and Information Security",
+    "aliases": [
+      "ASIACRYPT",
+      "International Conference on the Theory and Application of Cryptology and Information Security"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/asiacrypt.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Blockchain, Artificial Intelligence, and Trustworthy Systems",
+    "aliases": [
+      "BlockSys",
+      "International Conference on Blockchain, Artificial Intelligence, and Trustworthy Systems"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/blocksys.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "ACM Conference on Computer and Communications Security",
+    "aliases": [
+      "CCS",
+      "ACM Conference on Computer and Communications Security"
+    ],
+    "system": "CCF",
+    "rank": "A",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/ccs.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Cryptographic Hardware and Embedded Systems",
+    "aliases": [
+      "CHES",
+      "International Conference on Cryptographic Hardware and Embedded Systems"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/ches.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "ACM Conference on Data and Application Security and Privacy",
+    "aliases": [
+      "CODASPY",
+      "ACM Conference on Data and Application Security and Privacy"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/codaspy.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Cryptology Conference",
+    "aliases": [
+      "CRYPTO",
+      "International Cryptology Conference"
+    ],
+    "system": "CCF",
+    "rank": "A",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/crypto.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IEEE International Conference on Cyber Security and Cloud Computing",
+    "aliases": [
+      "CSCloud",
+      "IEEE International Conference on Cyber Security and Cloud Computing"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/cscloud.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IEEE Computer Security Foundations Symposium",
+    "aliases": [
+      "CSFW",
+      "IEEE Computer Security Foundations Symposium"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/csfw.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Cryptographer's Track at RSA Conference",
+    "aliases": [
+      "CT-RSA",
+      "Cryptographer's Track at RSA Conference"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/ct-rsa.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Digital Forensic Research Workshop Asia Pacific",
+    "aliases": [
+      "DFRWS APAC",
+      "Digital Forensic Research Workshop Asia Pacific"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/dfrws-apac.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Digital Forensic Research Workshop",
+    "aliases": [
+      "DFRWS",
+      "Digital Forensic Research Workshop"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/dfrws.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Detection of Intrusions and Malware & Vulnerability Assessment",
+    "aliases": [
+      "DIMVA",
+      "Detection of Intrusions and Malware & Vulnerability Assessment"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/dimva.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Dependable Systems and Networks",
+    "aliases": [
+      "DSN",
+      "International Conference on Dependable Systems and Networks"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/dsn.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "European Symposium on Research in Computer Security",
+    "aliases": [
+      "ESORICS",
+      "European Symposium on Research in Computer Security"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/esorics.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "European Cryptology Conference",
+    "aliases": [
+      "EUROCRYPT",
+      "European Cryptology Conference"
+    ],
+    "system": "CCF",
+    "rank": "A",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/eurocrypt.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IEEE European Symposium on Security and Privacy",
+    "aliases": [
+      "EuroS&P",
+      "IEEE European Symposium on Security and Privacy"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/eurosp.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Financial Cryptography and Data Security",
+    "aliases": [
+      "FC",
+      "Financial Cryptography and Data Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/fc.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Fast Software Encryption",
+    "aliases": [
+      "FSE",
+      "Fast Software Encryption"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/fse.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "USENIX Workshop on Hot Topics in Security",
+    "aliases": [
+      "HotSec",
+      "USENIX Workshop on Hot Topics in Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/hotsec.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Digital Forensics & Cyber Crime",
+    "aliases": [
+      "ICDF2C",
+      "International Conference on Digital Forensics & Cyber Crime"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/icdf2c.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Information and Communications Security",
+    "aliases": [
+      "ICICS",
+      "International Conference on Information and Communications Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/icics.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IFIP WG 11.9 International Conference on Digital Forensics",
+    "aliases": [
+      "IFIP WG 11.9",
+      "IFIP WG 11.9 International Conference on Digital Forensics"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/ifip119.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "ACM Workshop on Information Hiding and Multimedia Security",
+    "aliases": [
+      "IH&MMSec",
+      "ACM Workshop on Information Hiding and Multimedia Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/ih&mmsec.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Information Security and Cryptology",
+    "aliases": [
+      "INSCRYPT",
+      "International Conference on Information Security and Cryptology"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/inscrypt.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Information Security Conference",
+    "aliases": [
+      "ISC",
+      "Information Security Conference"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/isc.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Network and Distributed System Security (NDSS) Symposium",
+    "aliases": [
+      "NDSS",
+      "Network and Distributed System Security (NDSS) Symposium"
+    ],
+    "system": "CCF",
+    "rank": "A",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/ndss.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "New Security Paradigms Workshop",
+    "aliases": [
+      "NSPW",
+      "New Security Paradigms Workshop"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/nspw.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Passive and Active Measurement Conference",
+    "aliases": [
+      "PAM",
+      "Passive and Active Measurement Conference"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/pam.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Privacy Enhancing Technologies Symposium",
+    "aliases": [
+      "PETS",
+      "Privacy Enhancing Technologies Symposium"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/pets.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Practice and Theory of Public-Key Cryptography",
+    "aliases": [
+      "PKC",
+      "International Conference on Practice and Theory of Public-Key Cryptography"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/pkc.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Symposium on Recent Advances in Intrusion Detection",
+    "aliases": [
+      "RAID",
+      "International Symposium on Recent Advances in Intrusion Detection"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/raid.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Selected Areas in Cryptography",
+    "aliases": [
+      "SAC",
+      "Selected Areas in Cryptography"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/sac.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "ACM Symposium on Access Control Models and Technologies",
+    "aliases": [
+      "SACMAT",
+      "ACM Symposium on Access Control Models and Technologies"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/sacmat.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IFIP International Information Security Conference",
+    "aliases": [
+      "SEC",
+      "IFIP International Information Security Conference"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/sec.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "International Conference on Security and Privacy in Communication Networks",
+    "aliases": [
+      "SecureComm",
+      "International Conference on Security and Privacy in Communication Networks"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/securecomm.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Symposium On Usable Privacy and Security",
+    "aliases": [
+      "SOUPS",
+      "Symposium On Usable Privacy and Security"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/soups.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IEEE Symposium on Security and Privacy",
+    "aliases": [
+      "S&P",
+      "IEEE Symposium on Security and Privacy"
+    ],
+    "system": "CCF",
+    "rank": "A",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/sp.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IEEE International Symposium on Reliable Distributed Systems",
+    "aliases": [
+      "SRDS",
+      "IEEE International Symposium on Reliable Distributed Systems"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/srds.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "Theory of Cryptography Conference",
+    "aliases": [
+      "TCC",
+      "Theory of Cryptography Conference"
+    ],
+    "system": "CCF",
+    "rank": "B",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/tcc.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications",
+    "aliases": [
+      "TrustCom",
+      "IEEE International Conference on Trust, Security and Privacy in Computing and Communications"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/trustcom.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "USENIX Security Symposium",
+    "aliases": [
+      "USENIX Security",
+      "USENIX Security Symposium"
+    ],
+    "system": "CCF",
+    "rank": "A",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/uss.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  },
+  {
+    "venue": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+    "aliases": [
+      "WiSec",
+      "ACM Conference on Security and Privacy in Wireless and Mobile Networks"
+    ],
+    "system": "CCF",
+    "rank": "C",
+    "year": "未声明目录年份",
+    "category": "网络与信息安全会议",
+    "source": "https://github.com/ccfddl/ccf-deadlines/blob/aa5675e7e54ffde41032f97723cf5e52a4cc6844/conference/SC/wisec.yml",
+    "status": "community_snapshot",
+    "snapshot": "2026-11-03",
+    "version": "aa5675e7e54ffde41032f97723cf5e52a4cc6844"
+  }
+]
