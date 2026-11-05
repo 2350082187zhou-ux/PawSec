@@ -1,5 +1,7 @@
 # 域名部署与运维
 
+> 可选高级部署。当前推荐 [Ubuntu 本地运行](LOCAL.md)，不需要 Docker、域名或 HTTPS。
+
 ## 部署模型
 
 ```text

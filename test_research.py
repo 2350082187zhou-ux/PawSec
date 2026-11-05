@@ -1,4 +1,4 @@
-﻿import io, json, tempfile, time, unittest, zipfile
+﻿import io, json, tempfile, time, unittest, zipfile, shutil
 from pathlib import Path
 from unittest.mock import patch
 import pymupdf as fitz
@@ -48,11 +48,16 @@ class ResearchTests(unittest.TestCase):
         r=self.get(f'/api/papers/{pid}/download/notes.pdf'); self.assertEqual(r.status_code,200); d=fitz.open(stream=r.data,filetype='pdf'); self.assertIn('信任边界',''.join(x.get_text() for x in d)); d.close()
         r=self.get(f'/api/papers/{pid}/download/poster.pdf'); self.assertEqual(r.status_code,200); d=fitz.open(stream=r.data,filetype='pdf'); self.assertEqual(len(d),1); self.assertIn('核心贡献',d[0].get_text()); d.close()
         r=self.get(f'/api/papers/{pid}/download/poster.png'); self.assertEqual(r.data[:8],b'\x89PNG\r\n\x1a\n')
+        self.assertIn('信任边界',self.get(f'/api/papers/{pid}/export').text)
+        s['sections'][0]['body']='长'*221; self.assertEqual(self.post(f'/api/papers/{pid}/story',s).status_code,400)
+    @unittest.skipUnless(shutil.which('node') and (Path(__file__).resolve().parent/'node_modules/pptxgenjs').exists(), 'Optional PPTX dependencies not installed')
+    def test_optional_pptx_export(self):
+        p=self.fixture();pid=p['id']
+        s={'title':'Synthetic slides','subtitle':'Test only','sections':[{'title':x,'body':'Synthetic evidence [p.1]'} for x in ['研究问题','核心贡献','关键方法','实验结果','局限边界','复现清单']]}
+        self.assertEqual(self.post(f'/api/papers/{pid}/story',s).status_code,200)
         r=self.get(f'/api/papers/{pid}/download/slides.pptx'); self.assertEqual(r.status_code,200,r.json if r.is_json else '')
         with zipfile.ZipFile(io.BytesIO(r.data)) as z:
             slides=[n for n in z.namelist() if n.startswith('ppt/slides/slide') and n.endswith('.xml')]; self.assertEqual(len(slides),7); self.assertIn('核心贡献',z.read('ppt/slides/slide3.xml').decode())
-        self.assertIn('信任边界',self.get(f'/api/papers/{pid}/export').text)
-        s['sections'][0]['body']='长'*221; self.assertEqual(self.post(f'/api/papers/{pid}/story',s).status_code,400)
     def test_unedited_story_not_exported(self):
         p=self.fixture(); self.assertEqual(self.get(f"/api/papers/{p['id']}/download/slides.pptx").status_code,400)
 if __name__=='__main__': unittest.main(verbosity=2)

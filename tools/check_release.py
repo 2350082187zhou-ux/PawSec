@@ -1,19 +1,27 @@
-"""Inspect tracked (or staged) source paths without reading private runtime files."""
-import re,subprocess,sys
+"""Inspect tracked source paths and staged bytes; never read private runtime data."""
+import re
+import subprocess
+import sys
 from pathlib import Path
-root=Path(__file__).resolve().parents[1]
-result=subprocess.run(['git','ls-files','-z'],cwd=root,capture_output=True,check=True)
-files=[Path(x) for x in result.stdout.decode().split('\0') if x]
-if not files:raise SystemExit('No tracked files. Stage the reviewed source before running the release check.')
-bad=[]
-blocked={'data','secrets','backups','.qa','.venv','node_modules','preview-profile','private-backups'}
+from privacy_rules import private_path, content_findings
+
+root = Path(__file__).resolve().parents[1]
+result = subprocess.run(['git', 'ls-files', '-z'], cwd=root, capture_output=True, check=True)
+files = [x for x in result.stdout.decode().split('\0') if x]
+if not files:
+    raise SystemExit('No tracked files. Stage reviewed source before running the release check.')
+bad = []
 for rel in files:
- if any(p in blocked for p in rel.parts) or rel.name=='.env' or rel.suffix.lower() in {'.enc','.key','.pem','.p12','.pdf','.pptx','.sqlite3'}:bad.append(str(rel));continue
- p=root/rel
- if p.suffix not in {'.py','.js','.cjs','.json','.html','.md','.yaml','.yml','.txt'}:continue
- text=p.read_text(encoding='utf-8',errors='replace')
- if re.search(r'(?:sk-[A-Za-z0-9_-]{24,}|gh[pousr]_[A-Za-z0-9]{30,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)',text):bad.append(str(rel)+' (credential pattern)')
- # A release must not depend on the original developer's home directory.
- if re.search(r'C:[/\\]Users[/\\][^/\\\s]+[/\\](?:PawSec|\.codex)',text,re.I):bad.append(str(rel)+' (developer path)')
-if bad:print('\n'.join(bad));raise SystemExit(1)
-print(f'Release check passed: {len(files)} tracked files; no blocked runtime paths or credential patterns.')
+    if private_path(rel):
+        bad.append(rel + ' (private runtime path)')
+        continue
+    staged = subprocess.check_output(['git', 'show', ':' + rel], cwd=root)
+    path = root / rel
+    blobs = [staged] + ([path.read_bytes()] if path.is_file() else [])
+    for rule in sorted({r for blob in blobs for r in content_findings(blob)}):
+        bad.append(rel + ' (' + rule + ')')
+    if any(re.search(rb'C:[/\\]Users[/\\][^/\\\s]+[/\\](?:PawSec|\.codex)', blob, re.I) for blob in blobs):
+        bad.append(rel + ' (developer path)')
+if bad:
+    print('\n'.join(bad)); sys.exit(1)
+print(f'Release check passed: {len(files)} tracked files; no blocked paths or credential patterns.')

@@ -1,3 +1,12 @@
+# Keep the legacy entry point on the same locked local server.
+if __name__ == '__main__':
+    import os as _os
+    import sys as _sys
+    from pathlib import Path as _Path
+    if _os.getenv('PAWSEC_MODE', 'local') != 'local':
+        raise RuntimeError('Use python server.py for public deployments')
+    _os.execv(_sys.executable, [_sys.executable, str(_Path(__file__).with_name('server.py'))])
+
 from pathlib import Path
 import json, re, uuid, threading, time, socket, ipaddress, base64, os
 from urllib.parse import urlparse
@@ -8,7 +17,12 @@ from cryptography.fernet import Fernet
 ROOT=Path(__file__).resolve().parent
 DATA=Path(os.getenv('PAWSEC_DATA_DIR',str(ROOT/'data'))).expanduser().resolve(); DATA.mkdir(parents=True,exist_ok=True)
 KEY=DATA/'secret.key'
-if not KEY.exists(): KEY.write_bytes(Fernet.generate_key())
+if not KEY.exists():
+    if any(DATA.rglob('*.enc')):
+        raise RuntimeError('Encrypted data exists but secret.key is missing. Restore the original key; no replacement was created.')
+    with KEY.open('xb') as key_file:
+        key_file.write(Fernet.generate_key())
+    KEY.chmod(0o600)
 cipher=Fernet(KEY.read_bytes())
 app=Flask(__name__,static_folder='static'); app.config['MAX_CONTENT_LENGTH']=50*1024*1024
 jobs={}; lock=threading.RLock()

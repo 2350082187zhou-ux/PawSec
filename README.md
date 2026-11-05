@@ -19,40 +19,51 @@
 
 它目前没有多用户数据隔离、访客额度或公开注册。不要把管理员账号分享给陌生人，也不要把它作为无需登录的公共 AI 服务。
 
-## 本机运行
+## Ubuntu 本地运行（推荐）
 
-需要 Python 3.12+。PPTX 导出还需要 Node.js 20+。
+采用 **Local First + GitHub Source Backup**：程序在自己的 Ubuntu 电脑运行，
+GitHub 只保存源码。无需 Docker、云服务器、域名、DNS 或公网 HTTPS。
 
-```bash
-python -m venv .venv
-# Linux / macOS
-source .venv/bin/activate
-# Windows PowerShell 则使用：.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-npm ci --omit=dev
-python app.py
-```
+~~~bash
+sudo apt update
+sudo apt install -y git python3 python3-venv libgomp1 fonts-noto-cjk
+git clone https://github.com/2350082187zhou-ux/PawSec.git
+cd PawSec
+bash scripts/start.sh
+~~~
 
-访问 <http://127.0.0.1:8765>，在「模型连接」中填写自己的服务地址、模型和 API Key。自动阅读和邮件发送初始关闭，需要在界面设置。
+首次自动安装 Python 依赖，访问 <http://127.0.0.1:8765>。
+已有源码目录请直接在其中更新，不要克隆覆盖。默认沿用原有 data/。
+PDF 阅读、AI、笔记、报告、邮件和本地 SQLite 均保留。
 
-## 部署到自己的域名
+| 操作 | 命令 |
+|---|---|
+| 启动 | bash scripts/start.sh |
+| 停止 | 启动终端 Ctrl+C，或 bash scripts/stop.sh |
+| 环境检查 | bash scripts/doctor.sh |
+| 完整备份（先停止） | bash scripts/backup.sh |
+| 更新（先停止，自动备份） | bash scripts/update.sh |
 
-需要一台能持续运行的 Linux 服务器及 Docker Compose。推荐使用 `papers.zhouzedong.top` 这样的独立子域名。当前前端使用根路径，不支持直接挂到 `/papers/` 子路径。
+备份默认写到 ~/PawSec-backups/，包含 PDF、笔记、数据库和解密密钥，
+不会推送到 GitHub。恢复只允许写入新目录：
 
-1. 将子域名 A 记录指向服务器 IPv4；如使用 AAAA，确保 IPv6 也通畅。
-2. 在服务器克隆代码，复制 `.env.example` 为 `.env`，填写域名、管理员用户名、公开源码地址和时区。
-3. 生成管理员密码文件，然后启动：
+~~~bash
+bash scripts/restore.sh "$HOME/PawSec-backups/你的备份.tar.gz" --to "$HOME/pawsec-restored"
+export PAWSEC_DATA_DIR="$HOME/pawsec-restored"
+bash scripts/start.sh
+~~~
 
-```bash
-python -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/python tools/create_admin.py
-docker compose up -d --build
-```
+Python 3.12+ 为必需；Node.js 20+ 仅可选 PPTX 导出需要。
+安装 Node/npm 后运行 bash scripts/setup.sh --pptx。
+自动阅读和邮件初始关闭，需要在界面配置；电脑休眠或应用停止时不能执行定时任务。
 
-Caddy 使用 80/443 端口签发和续期证书。浏览器访问你的域名时弹出管理员登录框。详细操作、备份和升级见 [部署指南](docs/DEPLOYMENT.md)。
+**完整的启动、停止、旧数据迁移、更新和备份恢复说明：[本地使用指南](docs/LOCAL.md)。**
 
-公网启动缺少域名或密码哈希时会直接失败。应用端口不映射到宿主机；请勿另外开放 8765，也不要绕过代理暴露 Flask 开发服务器。
+## 可选 Docker 部署
+
+现有 Docker、Compose、Caddy 和公开部署登录保护继续保留，
+但它们不是本地运行的依赖，本地脚本不会启动 Docker 或配置域名。
+将来确实需要部署时再参考 [部署指南](docs/DEPLOYMENT.md)。
 
 ## 数据与隐私
 
@@ -67,6 +78,7 @@ Caddy 使用 80/443 端口签发和续期证书。浏览器访问你的域名时
 ```bash
 python tools/run_tests.py
 python tools/check_release.py
+python tools/audit_history.py
 ```
 
 测试使用临时数据和模拟模型；不需要真实 API Key，也不发送真实邮件。每个测试模块在独立进程运行，避免全局 Flask 扩展的测试状态互相影响。

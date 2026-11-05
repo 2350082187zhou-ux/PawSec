@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -19,6 +21,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: npm ci --omit=dev --ignore-scripts
       - run: python tools/check_release.py
+      - run: python tools/audit_history.py
+      - run: for script in scripts/*.sh; do bash -n "$script"; done
       - run: python tools/run_tests.py
       - name: Validate Compose
         run: |
